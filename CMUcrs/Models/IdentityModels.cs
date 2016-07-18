@@ -29,5 +29,11 @@ namespace CMUcrs.Models
         {
             return new ApplicationDbContext();
         }
-    }
+
+        public System.Data.Entity.DbSet<CMUcrs.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<CMUcrs.Models.Course> Courses { get; set; }
+        public System.Data.Entity.DbSet<CMUcrs.Models.Enrollment> Enrollments { get; set; }
+    
+}
 }
